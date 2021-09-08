@@ -1,0 +1,129 @@
+/*--------------------------------------HEADER----------------------------------*/
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 6px 7px 0px rgba(0,0,0,0.46);
+    -webkit-box-shadow: 0px 6px 7px 0px rgba(0,0,0,0.46);
+    -moz-box-shadow: 0px 6px 7px 0px rgba(0,0,0,0.46);
+        
+    a{
+        text-decoration: none;
+    }
+}
+
+.navUl {
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+        li{
+            display: inline-block;
+        
+            a {
+                display: block;
+                text-align: center;
+                padding: 38px 10px;
+                margin: 0 15px;
+                font-family: $font-botones;
+                border-radius: 5px;
+                text-shadow: 2px 2px 2px black;
+                transition: all 0.2s linear;
+        }
+    }         
+}
+ 
+.wspContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    transition: all 0.2s linear;
+}
+
+.wsp-header {
+    width: 50px;
+    margin-right: 45px;
+}
+
+.botones:hover {
+    padding: 25px 10px;
+    box-shadow: 0px 0px 5px 0px black;
+}
+
+.cel-header {
+    display: inline-block;
+    font-family: $font-titulo;
+    margin: auto 0px;
+}
+
+.logo {
+    width: 450px; 
+    margin: 5px;
+}
+
+.menu-responsive {
+    display: none;
+}
+/*--------------------------------------FINHEADER----------------------------------*/
+
+/*--------------------------------------MEDIA QUERY HEADER----------------------------------*/
+@media only screen and (min-width: 769px) and (max-width:1440px){
+
+    .logo {
+        width: 300px;
+        margin: 10px;
+    }
+
+    .navUl li a {
+        margin: 0px 0px;
+    }
+
+    .cel-header {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 901px){
+    header{
+        height: 150px;
+        flex-direction: column;
+
+    }
+
+    .logo {
+        width: 300px;
+        margin: 0px;
+    }
+
+    .wsp-header {
+        display: none;
+    }
+
+    .cel-header {
+        display: none;
+        
+    }
+
+
+}
+
+@media only screen and (max-width: 639px){
+    header {
+        display: none;
+    }
+
+    .menu-responsive {
+        display: block;
+        
+        a {
+            font-family: $font-titulo;
+            color: $principal;
+            margin-left: 15px;
+            text-decoration: none;
+        }
+    }
+}
+/*--------------------------------------FIN MEDIA QUERY HEADER----------------------------------*/

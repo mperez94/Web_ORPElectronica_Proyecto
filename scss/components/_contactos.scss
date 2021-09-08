@@ -1,0 +1,135 @@
+/*--------------------------------------CONTACTOS----------------------------------*/
+
+h2 {
+    font-family: $font-titulo;
+    text-decoration: underline;
+}
+
+.logo-contacto {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.contactos {
+    display: flex;
+    font-family: $font-parrafo;
+    color: $principal;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 2px black;
+    
+    ul {
+        margin: 0px auto;
+
+        li {
+            list-style: none;
+            text-decoration: none;
+            margin-top: 20px;
+            text-shadow: 2px 2px 2px black;
+
+            a {
+                list-style: none;
+                text-decoration: none;
+                color: $principal;
+            }
+        }
+    }
+}
+
+.t-maps{
+    color: $principal;
+    font-family: $font-titulo;
+    font-size: xx-large;
+    text-decoration: underline; 
+    text-shadow: 2px 2px 2px black;
+    margin-top: 100px;
+}
+
+.maps {
+    width: 600px;
+    height: 450px;
+    margin-bottom: 50px;
+}
+
+.contactSection {
+    margin-top: 100px;
+}
+
+/*--------------------------------------FIN CONTACTOS----------------------------------*/
+
+/*--------------------------------------MEDIA QUERY CONTACTOS----------------------------------*/
+@media only screen and (min-width: 769px) and (max-width:1440px){
+
+    .logo {
+        width: 300px;
+        margin: 10px;
+    }
+
+    .navUl li a {
+        margin: 0px 0px;
+    }
+
+    .cel-header {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 901px){
+    header{
+        height: 150px;
+        flex-direction: column;
+
+    }
+
+    .logo {
+        width: 300px;
+        margin: 0px;
+    }
+
+    .wsp-header {
+        display: none;
+    }
+
+    .cel-header {
+        display: none;
+        
+    }
+
+
+}
+
+@media only screen and (max-width: 639px){
+    header {
+        display: none;
+    }
+
+    .maps {
+        width: 400px;
+        height: 300px;
+    }    
+
+    .menu-responsive {
+        display: block;
+        
+        a {
+            font-family: $font-titulo;
+            color: $principal;
+            margin-left: 15px;
+            text-decoration: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 403px){
+
+    .maps {
+        width: 300px;
+        height: 200px;
+    }
+
+}
+
+
+/*--------------------------------------FIN MEDIA QUERY CONTACTOS----------------------------------*/

@@ -1,0 +1,78 @@
+/*--------------------------------------FOOTER----------------------------------*/
+
+footer {
+    background-color: $hf;
+    color: $principal;
+    box-shadow: 0px 6px 7px 0px rgba(0,0,0,0.46);
+    -webkit-box-shadow: 0px 6px 7px 0px rgba(0,0,0,0.46);
+    -moz-box-shadow: 0px 6px 7px 0px rgba(0,0,0,0.46);
+
+}
+
+.footer-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.insta {
+    width: 34px;
+    margin-top: 16px;
+    margin-right: 10px;
+}
+
+.wsp {
+    margin-top: 16px;
+    width: 34px;
+}
+
+.logo-footer {
+    margin-top: 7px;
+    width: 315px;
+    margin-right: 25px;
+}
+ 
+.cel {
+    display: inline-block;
+    font-family: $font-titulo;
+    margin: auto 0px;
+}
+
+.wsp-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 25px;
+}
+
+.wsp-responsive {
+    display: none;
+}
+/*--------------------------------------FIN FOOTER----------------------------------*/
+
+/*--------------------------------------MEDIA QUERY FOOTER----------------------------------*/
+
+@media only screen and (max-width: 540px){
+
+    footer {
+        display: none;
+    }
+    .wsp {
+        width: 55px;
+        margin: 6px;
+
+    }
+    .wsp-responsive {
+        display: flex;
+        background-color: $hf;
+        position: sticky;
+        bottom: 30px;
+        left: 540px;
+        width: 68px;
+        border-radius: 15px;
+        margin-right: 10px;
+
+    }
+
+}
+
+/*--------------------------------------FIN MEDIA QUERY FOOTER----------------------------------*/

@@ -1,0 +1,15 @@
+/*--------------------------------------GENERAL----------------------------------*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/*--------------------------------------FIN GENERAL----------------------------------*/
+
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/maps';
+@import 'base/condiciones';
+@import 'components/header';
+@import 'components/sections';
+@import 'components/contactos';
+@import 'components/footer';

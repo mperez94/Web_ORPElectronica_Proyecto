@@ -1,0 +1,31 @@
+/*--------------------------------------MAPS----------------------------------*/
+
+
+$colores: (
+    
+    header-footer: $hf, 
+
+    principal: $principal,
+
+    body: $body,
+
+    hover: $hover,
+
+);
+
+
+header {
+    background-color: map-get($colores, header-footer );
+    color: map-get($colores, principal );
+}
+
+header a{ 
+    color: map-get($colores, principal );
+}
+
+.botones:hover {
+    color: map-get($colores, principal);
+    background: map-get($colores, hover);
+}
+
+/*--------------------------------------FIN MAPS----------------------------------*/

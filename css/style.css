@@ -1,0 +1,515 @@
+/*--------------------------------------GENERAL----------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,600&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*--------------------------------------FIN GENERAL----------------------------------*/
+/*--------------------------------------MIXINS----------------------------------*/
+.t-servicios {
+  display: flex;
+  font-family: "Chakra Petch", sans-serif;
+  color: #fcc602;
+  margin-top: 150px;
+  margin-bottom: 0px;
+}
+
+.t-nosotros {
+  font-family: "Chakra Petch", sans-serif;
+  color: #fcc602;
+  margin-top: 50px;
+}
+
+/*--------------------------------------FIN MIXINS----------------------------------*/
+/*--------------------------------------MAPS----------------------------------*/
+header {
+  background-color: #1d1e33;
+  color: #fcc602;
+}
+
+header a {
+  color: #fcc602;
+}
+
+.botones:hover {
+  color: #fcc602;
+  background: #242640;
+}
+
+/*--------------------------------------FIN MAPS----------------------------------*/
+/*--------------------------------------HEADER----------------------------------*/
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 6px 7px 0px rgba(0, 0, 0, 0.46);
+  -webkit-box-shadow: 0px 6px 7px 0px rgba(0, 0, 0, 0.46);
+  -moz-box-shadow: 0px 6px 7px 0px rgba(0, 0, 0, 0.46);
+}
+header a {
+  text-decoration: none;
+}
+
+.navUl {
+  margin: 0;
+  padding: 0px;
+  list-style: none;
+}
+.navUl li {
+  display: inline-block;
+}
+.navUl li a {
+  display: block;
+  text-align: center;
+  padding: 38px 10px;
+  margin: 0 15px;
+  font-family: "Roboto", sans-serif;
+  border-radius: 5px;
+  text-shadow: 2px 2px 2px black;
+  transition: all 0.2s linear;
+}
+
+.wspContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+  transition: all 0.2s linear;
+}
+
+.wsp-header {
+  width: 50px;
+  margin-right: 45px;
+}
+
+.botones:hover {
+  padding: 25px 10px;
+  box-shadow: 0px 0px 5px 0px black;
+}
+
+.cel-header {
+  display: inline-block;
+  font-family: "Chakra Petch", sans-serif;
+  margin: auto 0px;
+}
+
+.logo {
+  width: 450px;
+  margin: 5px;
+}
+
+.menu-responsive {
+  display: none;
+}
+
+/*--------------------------------------FINHEADER----------------------------------*/
+/*--------------------------------------MEDIA QUERY HEADER----------------------------------*/
+@media only screen and (min-width: 769px) and (max-width: 1440px) {
+  .logo {
+    width: 300px;
+    margin: 10px;
+  }
+
+  .navUl li a {
+    margin: 0px 0px;
+  }
+
+  .cel-header {
+    display: none;
+  }
+}
+@media only screen and (max-width: 901px) {
+  header {
+    height: 150px;
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 300px;
+    margin: 0px;
+  }
+
+  .wsp-header {
+    display: none;
+  }
+
+  .cel-header {
+    display: none;
+  }
+}
+@media only screen and (max-width: 639px) {
+  header {
+    display: none;
+  }
+
+  .menu-responsive {
+    display: block;
+  }
+  .menu-responsive a {
+    font-family: "Chakra Petch", sans-serif;
+    color: #fcc602;
+    margin-left: 15px;
+    text-decoration: none;
+  }
+}
+/*--------------------------------------FIN MEDIA QUERY HEADER----------------------------------*/
+/*--------------------------------------SECTIONS----------------------------------*/
+body {
+  background-color: #242640;
+}
+
+.imgSection {
+  width: 450px;
+  margin: 5px;
+}
+
+.imagesContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.gridNosotros {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 0fr 0.4fr;
+  grid-template-rows: 0fr 0.6fr;
+  gap: 10px 15px;
+  margin: 15px 0px;
+}
+
+@keyframes traslado {
+  from {
+    position: relative;
+    right: 950px;
+    opacity: 0%;
+  }
+  to {
+    position: relative;
+    right: 0px;
+    opacity: 100%;
+  }
+}
+.gridImage {
+  width: 450px;
+  height: 225px;
+  margin-bottom: 20px;
+  box-shadow: 12px 10px 5px -4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 12px 10px 5px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 12px 10px 5px -4px rgba(0, 0, 0, 0.75);
+  animation: traslado 2s;
+}
+
+@keyframes opacidad {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+.p-nosotros {
+  font-family: "Roboto", sans-serif;
+  font-size: large;
+  color: #fcc602;
+  text-align: left;
+  text-shadow: 2px 2px 2px black;
+  animation: opacidad 1s;
+  margin-bottom: 20px;
+}
+
+.maps {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0px;
+}
+
+.ul-servicios {
+  color: #fcc602;
+  font-family: "Roboto", sans-serif;
+  font-size: larger;
+  margin: 50px 30px;
+}
+.ul-servicios li {
+  margin: 15px 0px;
+  text-shadow: 2px 2px 2px black;
+  animation: opacidad 5s;
+}
+
+#servicios {
+  display: flex;
+  flex-direction: none;
+  justify-content: center;
+  margin: -23px 10px;
+}
+
+.t-servicios {
+  font-size: xx-large;
+  text-decoration: underline;
+  justify-content: center;
+  text-shadow: 2px 2px 2px black;
+}
+
+.t-nosotros {
+  font-size: xx-large;
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  text-shadow: 2px 2px 2px black;
+}
+
+.carru {
+  background-color: #04061a;
+  display: flex;
+  justify-content: center;
+}
+
+/*--------------------------------------FIN SECTIONS----------------------------------*/
+/*--------------------------------------MEDIA QUYERY SECTIONS----------------------------------*/
+@media only screen and (max-width: 1440px) {
+  .p-nosotros {
+    margin: 0px auto;
+    text-justify: auto;
+  }
+
+  .media-img {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .gridNosotros {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .p-nosotros {
+    margin-bottom: auto;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 901px) {
+  .carru-w {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .gridImage {
+    width: 315px;
+  }
+
+  .t-servicios {
+    display: block;
+    text-align: center;
+  }
+
+  #servicios {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ul1 {
+    margin-bottom: 0;
+  }
+
+  .ul2 {
+    margin-top: -7px;
+  }
+}
+/*--------------------------------------FIN MEDIA QUERY SECTIONS----------------------------------*/
+/*--------------------------------------CONTACTOS----------------------------------*/
+h2 {
+  font-family: "Chakra Petch", sans-serif;
+  text-decoration: underline;
+}
+
+.logo-contacto {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.contactos {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  color: #fcc602;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 2px black;
+}
+.contactos ul {
+  margin: 0px auto;
+}
+.contactos ul li {
+  list-style: none;
+  text-decoration: none;
+  margin-top: 20px;
+  text-shadow: 2px 2px 2px black;
+}
+.contactos ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: #fcc602;
+}
+
+.t-maps {
+  color: #fcc602;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: xx-large;
+  text-decoration: underline;
+  text-shadow: 2px 2px 2px black;
+  margin-top: 100px;
+}
+
+.maps {
+  width: 600px;
+  height: 450px;
+  margin-bottom: 50px;
+}
+
+.contactSection {
+  margin-top: 100px;
+}
+
+/*--------------------------------------FIN CONTACTOS----------------------------------*/
+/*--------------------------------------MEDIA QUERY CONTACTOS----------------------------------*/
+@media only screen and (min-width: 769px) and (max-width: 1440px) {
+  .logo {
+    width: 300px;
+    margin: 10px;
+  }
+
+  .navUl li a {
+    margin: 0px 0px;
+  }
+
+  .cel-header {
+    display: none;
+  }
+}
+@media only screen and (max-width: 901px) {
+  header {
+    height: 150px;
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 300px;
+    margin: 0px;
+  }
+
+  .wsp-header {
+    display: none;
+  }
+
+  .cel-header {
+    display: none;
+  }
+}
+@media only screen and (max-width: 639px) {
+  header {
+    display: none;
+  }
+
+  .maps {
+    width: 400px;
+    height: 300px;
+  }
+
+  .menu-responsive {
+    display: block;
+  }
+  .menu-responsive a {
+    font-family: "Chakra Petch", sans-serif;
+    color: #fcc602;
+    margin-left: 15px;
+    text-decoration: none;
+  }
+}
+@media only screen and (max-width: 403px) {
+  .maps {
+    width: 300px;
+    height: 200px;
+  }
+}
+/*--------------------------------------FIN MEDIA QUERY CONTACTOS----------------------------------*/
+/*--------------------------------------FOOTER----------------------------------*/
+footer {
+  background-color: #1d1e33;
+  color: #fcc602;
+  box-shadow: 0px 6px 7px 0px rgba(0, 0, 0, 0.46);
+  -webkit-box-shadow: 0px 6px 7px 0px rgba(0, 0, 0, 0.46);
+  -moz-box-shadow: 0px 6px 7px 0px rgba(0, 0, 0, 0.46);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.insta {
+  width: 34px;
+  margin-top: 16px;
+  margin-right: 10px;
+}
+
+.wsp {
+  margin-top: 16px;
+  width: 34px;
+}
+
+.logo-footer {
+  margin-top: 7px;
+  width: 315px;
+  margin-right: 25px;
+}
+
+.cel {
+  display: inline-block;
+  font-family: "Chakra Petch", sans-serif;
+  margin: auto 0px;
+}
+
+.wsp-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 25px;
+}
+
+.wsp-responsive {
+  display: none;
+}
+
+/*--------------------------------------FIN FOOTER----------------------------------*/
+/*--------------------------------------MEDIA QUERY FOOTER----------------------------------*/
+@media only screen and (max-width: 540px) {
+  footer {
+    display: none;
+  }
+
+  .wsp {
+    width: 55px;
+    margin: 6px;
+  }
+
+  .wsp-responsive {
+    display: flex;
+    background-color: #1d1e33;
+    position: sticky;
+    bottom: 30px;
+    left: 540px;
+    width: 68px;
+    border-radius: 15px;
+    margin-right: 10px;
+  }
+}
+/*--------------------------------------FIN MEDIA QUERY FOOTER----------------------------------*/
+
+/*# sourceMappingURL=style.css.map */

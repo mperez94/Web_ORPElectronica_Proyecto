@@ -1,0 +1,36 @@
+/*--------------------------------------MIXINS----------------------------------*/
+
+
+@mixin varios-parametros($ancho, $height, $display) {
+    width: $ancho;
+    height: $height;
+    display: $display;
+}
+
+@mixin font-color ($font-family, $color){
+    font-family: $font-family;
+    color: $color;    
+}
+
+@mixin margin ($margin-top, $margin-right, $margin-bottom, $margin-left) {
+    margin-top: $margin-top;
+    margin-right: $margin-right;
+    margin-bottom: $margin-bottom;
+    margin-left: $margin-left;   
+}
+
+.t-servicios {
+    @include varios-parametros(null, null, flex);
+    @include font-color($font-titulo,$principal );
+    @include margin(150px, null, 0px, null)
+}
+
+.t-nosotros {
+    @include font-color($font-titulo,$principal );
+    @include margin(50px, null, null, null)
+}
+
+
+
+
+/*--------------------------------------FIN MIXINS----------------------------------*/
